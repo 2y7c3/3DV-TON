@@ -31,9 +31,9 @@ pip install -e .
 
 ### Weights
 
-Download [Stable Diffusion](https://huggingface.co/lambdalabs/sd-image-variations-diffusers), [Motion module](https://huggingface.co/guoyww/animatediff/blob/main/v3_sd15_mm.ckpt),[VAE](https://huggingface.co/stabilityai/sd-vae-ft-mse) and Our [3DV-TON models](https://huggingface.co/2y7c3/3DV-TON) in ``` ./ckpts ```.
+Download [Stable Diffusion](https://huggingface.co/lambdalabs/sd-image-variations-diffusers), [Motion module](https://huggingface.co/guoyww/animatediff/blob/main/v3_sd15_mm.ckpt), [VAE](https://huggingface.co/stabilityai/sd-vae-ft-mse) and Our [3DV-TON models](https://huggingface.co/2y7c3/3DV-TON) in ``` ./ckpts ```.
 
-Download [Cloth masker](https://huggingface.co/2y7c3/3DV-TON) in ``` ./preprocess/ckpts ```. Then you can use our cloth masker to generate agnostic mask videos for improved try-on results.
+Download [Cloth masker](https://huggingface.co/2y7c3/3DV-TON/blob/main/masker_ckpts.zip) in ``` ./preprocess/ckpts ```. Then you can use our cloth masker to generate agnostic mask videos for improved try-on results.
 
 ## Inference
 We provid three demo examples in ```./demos/``` — run the following commands to test them.
@@ -51,13 +51,17 @@ python seg_mask.py --input demos/videos/video.mp4 --output demos/ --type overall
 
 # 2. use GVHMR to generate SMPL video
 
-# 3. use image tryon model to generate tryon image (e.g. CaTVTON)
+# 3. use image tryon model to generate tryon image (e.g. CatVTON)
 
-# 4. generate textured 3d mesh
+# 4. generate textured 3d guidance
 
 # 5. modify demo_test.yaml, then run
 python infer.py --config ./configs/inference/demo_test.yaml
 ```
+
+## Todo
+- [] Integrate the image try-on model inference code.  
+- [] Release the textured 3D guidance pipeline code.
 
 ## BibTeX
 ```text
@@ -68,3 +72,12 @@ python infer.py --config ./configs/inference/demo_test.yaml
   year={2025}
 }
 ```
+
+## Acknowledgements
+This code is built on many research works and open-source projects:
+
+* [ECON](https://github.com/YuliangXiu/ECON)
+* [CatVTON](https://github.com/Zheng-Chong/CatVTON)
+* [ViViD](https://github.com/alibaba-yuanjing-aigclab/ViViD)
+
+Thanks for their excellent works.
