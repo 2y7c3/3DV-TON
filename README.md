@@ -11,7 +11,7 @@ https://doi.org/10.1145/3746027.3754754
 [![HR-VVT](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-HR_VVT-yellow)](https://huggingface.co/datasets/2y7c3/HR-VVT)
 
 <div align=center>
-<img src="" width="25%"></img><img src="https://2y7c3.github.io/3DV-TON/static/images/teaser.png" width="100%"></img>
+<img src="https://2y7c3.github.io/3DV-TON/static/images/teaser.png" width="100%"></img>
 </div>
 
 ## Installation
