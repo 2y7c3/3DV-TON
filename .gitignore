@@ -1,5 +1,7 @@
-demos
-outputs
+# demos
+# outputs
 ckpts
 __pycache__
 .DS_*
+.gitignore
+.gitmodules
