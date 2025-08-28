@@ -1,0 +1,3 @@
+[submodule "preprocess/model/DensePose/detectron2"]
+	path = preprocess/model/DensePose/detectron2
+	url = https://github.com/facebookresearch/detectron2.git
