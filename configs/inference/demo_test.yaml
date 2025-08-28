@@ -1,0 +1,33 @@
+pretrained_base_model_path: "./ckpts/sd-image-variations-diffusers"
+pretrained_vae_path: "./ckpts/sd-vae-ft-mse"
+
+denoising_unet_path: './ckpts/3dvton-unet.ckpt'
+reference_unet_path: './ckpts/3dvton-ref_unet.ckpt'
+
+motion_module_path: "./ckpts/motion/v3_sd15_mm.ckpt"
+
+inference_config: "./configs/inference/inference.yaml"
+weight_dtype: 'fp16'
+L: 32
+
+model_video_paths:
+  - './demos/videos/1046043_detail.mp4'
+  - './demos/videos/model_1.mp4'
+  - './demos/videos/model_1.mp4'
+
+cloth_image_paths:
+  - './demos/cloths/1046602_in_xl.jpg'
+  - './demos/cloths/744396420989_origin_20240116174720.png'
+  - './demos/cloths/744288310346_origin_20240116171929.png'
+
+save_dir: 'outputs/'
+fps: 16
+steps: 20
+use_smpl: True
+use_mesh: True
+one_frame: True
+height: 768
+width: 576
+for_each: False
+tryon_res_path: ./demos/tryon_res
+mesh_path: ./demo/meshs
