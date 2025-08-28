@@ -1,4 +1,9 @@
 # 3DV-TON: Textured 3D-Guided Consistent Video Try-on via Diffusion Models
+Min Wei, Chaohui Yu, Jingkai Zhou, and Fan Wang. 2025.
+3DV-TON: Textured 3D-Guided Consistent Video Try-on via Diffusion Models. 
+In Proceedings of the 33rd ACM International Conference on Multimedia (MM ’25),
+October 27–31, 2025, Dublin, Ireland. ACM, New York, NY, USA, 10 pages.
+https://doi.org/10.1145/3746027.3754754
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.17414-b31b1b.svg)](https://arxiv.org/abs/2504.17414)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://2y7c3.github.io/3DV-TON/)
