@@ -73,7 +73,7 @@ def main():
     parser.add_argument("-dst", type=int, default=0)
     parser.add_argument("-dlen", type=int, default=-1)
     
-    parser.add_argument("--bag", action="store_true")
+    parser.add_argument("--protect_bag", action="store_true")
     parser.add_argument("--protect_face", action="store_true")
     
     args = parser.parse_args()
@@ -124,7 +124,7 @@ def main():
             
             agn, agn_mask= [],[]
             for i in frames:
-                tmp = masker(i, mask_type=args.type, padding=40, with_bag=args.bag, protect_face=args.protect_face)
+                tmp = masker(i, mask_type=args.type, padding=40, with_bag=args.protect_bag, protect_face=args.protect_face)
                 mask = tmp['mask']
                 masked_vton_img = Image.composite(Image.fromarray((np.array(mask)/255*127).astype(np.uint8)), i, mask)
                 agn.append(masked_vton_img)

@@ -23,7 +23,7 @@ OFFSET=0
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config",type=str,default="./configs/prompts/test.yaml")
+    parser.add_argument("--config",type=str,default="./configs/inference/demo_test.yaml")
     args = parser.parse_args()
 
     return args
