@@ -60,8 +60,8 @@ python infer.py --config ./configs/inference/demo_test.yaml
 ```
 
 ## Todo
-- [] Integrate the image try-on model inference code.  
-- [] Release the textured 3D guidance pipeline code.
+- [ ] Integrate the image try-on model inference code.  
+- [ ] Release the textured 3D guidance pipeline code.
 
 ## BibTeX
 ```text
